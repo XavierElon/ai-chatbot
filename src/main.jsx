@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import { createBrowserRouter,RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import DashboardPage from './routes/dashboardPage/DashboardPage'
 import Homepage from './routes/homepage/Homepage'
 import ChatPage from './routes/chatPage/Chatpage'
@@ -16,18 +16,26 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Homepage />,
+        element: <Homepage />
+      },
+      {
+        path: '/sign-in',
+        element: <SignInPage />
+      },
+      {
+        path: '/sign-up',
+        element: <SignUpPage />
       },
       {
         element: <DashboardLayout />,
         children: [
           {
             path: '/dashboard',
-            element: <DashboardPage />,
+            element: <DashboardPage />
           },
           {
             path: '/dashboard/chats/:id',
-            element: <ChatPage />,
+            element: <ChatPage />
           }
         ]
       }
@@ -38,5 +46,5 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
+  </React.StrictMode>
 )
