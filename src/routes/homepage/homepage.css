@@ -44,4 +44,20 @@
   .right {
     flex: 1;
   }
+  .orbital {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.1;
+    animation: 25s linear infinite rotateOrbital;
+  }
+}
+
+@keyframes rotateOrbital {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(60deg);
+  }
 }

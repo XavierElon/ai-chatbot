@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 const Homepage = () => {
   return (
     <div className="homepage">
+      <img src="/orbital.png" alt="" className="orbital" />
       <div className="left">
         <h1>Xavier Elon AI Chat Bot</h1>
         <h2>Test</h2>
