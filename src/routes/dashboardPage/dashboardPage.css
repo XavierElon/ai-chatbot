@@ -59,6 +59,7 @@
         }
       }
     }
+    
     .formContainer {
       margin-top: auto;
       width: 50%;
@@ -83,6 +84,7 @@
           outline: none;
           color: #ececec;
         }
+
         button {
           background-color: #605e68;
           border-radius: 50%;
