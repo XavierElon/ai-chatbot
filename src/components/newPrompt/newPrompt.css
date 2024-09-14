@@ -1,4 +1,6 @@
-
+.endChat {
+    padding-bottom: 100px;
+}
     .newForm {
         width: 50%;
         position: absolute;
